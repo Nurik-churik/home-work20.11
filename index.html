@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function esep(x, ob){
+    if(ob == "km"){
+        return x*1000  
+    }else if(ob == "dc"){
+        return x / 10
+    }else{
+        return x
+    }
+}
+
+var total = 0
+
+while(true){
+    var san = +prompt("Қашықтық жаз:")
+
+
+    if(san==0){
+        break;
+    }else{
+        var olshem_birlik = prompt("Өлшем бірлік:")
+        total += esep(san, olshem_birlik)
+    }
+    
+}
+
+alert(total)
+    </script>
+</body>
+</html>
